@@ -3,19 +3,18 @@
 > **Status:** 🟢 active · **Updated:** 2026-06-14
 > Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 
-**One-liner:** Family organization hub — web/backend. Pairs with FamilyHub Mobile.
+**One-liner:** Family task-management app — the web app + API backend that the mobile app talks to.
 
 ## Links
 - **Code:** `~/dev/Familyhub` · [remote](https://github.com/z-br/Familyhub)
 - **Live:** _tbd_
 
 ## Stack
-TypeScript · Prisma
+Next.js · TypeScript · NextAuth · Prisma · Postgres · Zod
 
 ## Overview
-_Auto-detected from the repo — refine me._
-
-Family organization hub — web/backend. Pairs with FamilyHub Mobile.
+Family task management (shared to-dos / chores / coordination). Serves the API consumed by [[familyhub-mobile]] (mobile client hits this app's API, default `:3001`).
 
 ## Related
-_Add links to related hub projects, e.g. [[familyhub]]._
+- Mobile client: [[familyhub-mobile]]
+- _Not_ related to [[famfam]] (that's a family-history wiki, different project).

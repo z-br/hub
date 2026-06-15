@@ -5,7 +5,6 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
-- [ ] Decide: is **famfam** a rewrite of **FamilyHub**, or separate? → [famfam](projects/famfam/todo.md) · [familyhub](projects/familyhub/todo.md)
 - [ ] Add a git remote for **FamilyHub Mobile** (local-only, unbacked) → [familyhub-mobile](projects/familyhub-mobile/todo.md)
 
 ## 📌 Soon
@@ -16,5 +15,7 @@
 - [ ] Revisit older-but-relevant: menagerie, storyshop, cookthebooks, blog — keep or archive?
 
 ## 🌐 Cross-cutting / themes
-- **Family suite:** FamilyHub (web) · FamilyHub Mobile · famfam — clarify the relationship and consolidate.
+- **FamilyHub suite:** FamilyHub (web/API) + FamilyHub Mobile (iOS client) — one product.
+- **famfam:** separate — a family-history wiki engine, unrelated to FamilyHub.
 - **Health:** HRV + the CPAP reference repos — one body of work.
+- **Claude-powered:** The Rose Light · famfam (both use the Anthropic API).

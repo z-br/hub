@@ -15,9 +15,9 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 |---|---|---|
 | [The Rose Light](projects/roselight/readme.md) | Self-curating Portland news aggregator (React Router/Claude) | `~/dev/theroselight.org` |
 | [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop" (Next.js) | `~/dev/homepage` |
-| [FamilyHub (web)](projects/familyhub/readme.md) | Family org hub, web/backend (TS/Prisma) | `~/dev/Familyhub` |
-| [FamilyHub Mobile](projects/familyhub-mobile/readme.md) | Mobile companion (React Native/Expo) | `~/dev/FamilyHubMobile` |
-| [famfam](projects/famfam/readme.md) | Family app (Next/Drizzle) — sibling of FamilyHub? | `~/dev/famfam` |
+| [FamilyHub (web)](projects/familyhub/readme.md) | Family task-management app + API (Next.js) | `~/dev/Familyhub` |
+| [FamilyHub Mobile](projects/familyhub-mobile/readme.md) | Mobile (iOS) client for FamilyHub (Expo/RN) | `~/dev/FamilyHubMobile` |
+| [famfam](projects/famfam/readme.md) | Family-history wiki engine — Claude-organized memories (Next.js) | `~/dev/famfam` |
 
 ### 🟡 Paused
 | Project | What | Code |
