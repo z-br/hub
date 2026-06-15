@@ -5,7 +5,6 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
-- [ ] **Finish `gh` repo deletion of `project-hub`** — run `gh auth refresh -h github.com -s delete_repo` then `gh repo delete z-br/project-hub --yes` (local folder already removed)
 - [ ] **FamilyHub repo state:** establish a `main` branch and commit the RN→SwiftUI transition (~438 uncommitted) → [familyhub](projects/familyhub/todo.md)
 - [ ] **The Rose Light:** review/merge README PR [#33](https://github.com/z-br/theroselight.org/pull/33) → [roselight](projects/roselight/todo.md)
 
