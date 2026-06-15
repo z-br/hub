@@ -14,29 +14,23 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 | Project | What | Code |
 |---|---|---|
 | [The Rose Light](projects/roselight/readme.md) | Self-curating Portland news aggregator (React Router/Claude) | `~/dev/theroselight.org` |
-| [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop" (Next.js) | `~/dev/homepage` |
-| [FamilyHub (web)](projects/familyhub/readme.md) | Family task-management app + API (Next.js) | `~/dev/Familyhub` |
-| [FamilyHub Mobile](projects/familyhub-mobile/readme.md) | Mobile (iOS) client for FamilyHub (Expo/RN) | `~/dev/FamilyHubMobile` |
+| [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop", Y2K/synthwave (Next.js) | `~/dev/homepage` |
+| [FamilyHub](projects/familyhub/readme.md) | Family task app — monorepo, Next.js web + SwiftUI iOS | `~/dev/Familyhub` |
 | [famfam](projects/famfam/readme.md) | Family-history wiki engine — Claude-organized memories (Next.js) | `~/dev/famfam` |
 
 ### 🟡 Paused
 | Project | What | Code |
 |---|---|---|
-| [Wallace Park Tennis](projects/wallacecourts/readme.md) | Tennis courts app (Vite/React) | `~/dev/wallacecourts` |
+| [Wallace Park Tennis](projects/wallacecourts/readme.md) | Wallace Park tennis courts site (Vite/React) | `~/dev/wallacecourts` |
 | [HRV / Sleep-Health](projects/hrv/readme.md) | HRV + VPC/APC from Polar H10 ECG; CPAP reference repos | `~/dev/hrv` |
 
-### ⚪ Older but relevant
+### ⚪ Older / ideas
 | Project | What | Code |
 |---|---|---|
-| [menagerie](projects/menagerie/readme.md) | Remix app — purpose TBD | `~/dev/menagerie` |
-| [storyshop](projects/storyshop/readme.md) | Remix/Prisma web app | `~/dev/storyshop` |
-| [cookthebooks](projects/cookthebooks/readme.md) | Go finance/accounting tool | `~/dev/cookthebooks` |
-| [blog](projects/blog/readme.md) | Personal blog (Astro) | `~/dev/blog` |
+| [cookthebooks](projects/cookthebooks/readme.md) | Go recipe/cookbook app (Elasticsearch search) | `~/dev/cookthebooks` |
+| [blog](projects/blog/readme.md) | Astro blog — scaffolded, not built out | `~/dev/blog` |
 
-### ⚫ Retired
-| Project | What | Code |
-|---|---|---|
-| [project-hub](projects/project-hub/readme.md) | Empty predecessor to this hub — safe to delete | `~/dev/project-hub` |
+> Removed/retired 2026-06-14: **FamilyHubMobile** (deleted — superseded by FamilyHub's SwiftUI iOS app), **project-hub** (deleted — predecessor to this hub), **menagerie** & **storyshop** (dropped from tracking), **databaseball_v1** (not mine — deleted).
 
 ## How this works
 - Each project folder has four files: `readme.md` (overview + status + links), `todo.md` (its tasks), `notes.md` (dated journal), `ideas.md` (backlog).

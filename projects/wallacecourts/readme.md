@@ -3,19 +3,17 @@
 > **Status:** 🟡 paused · **Updated:** 2026-06-14
 > Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 
-**One-liner:** Wallace Park tennis courts app ('wallace-park-tennis'). Last touched Mar 2026.
+**One-liner:** Site for the Wallace Park tennis courts (pkg `wallace-park-tennis`) — info + content/posts.
 
 ## Links
 - **Code:** `~/dev/wallacecourts` · [remote](https://github.com/z-br/wallacecourts)
 - **Live:** _tbd_
 
 ## Stack
-Vite · React · TypeScript
+Vite · React · React Router · TypeScript (content under `src/content/posts`)
 
 ## Overview
-_Auto-detected from the repo — refine me._
-
-Wallace Park tennis courts app ('wallace-park-tennis'). Last touched Mar 2026.
+A small site for the Wallace Park (NW Portland) tennis courts — has a content/posts structure, suggesting news/updates or a schedule. Single commit, dormant since Mar 2026. Needs a clear purpose statement: court schedule? group/ladder? booking?
 
 ## Related
-_Add links to related hub projects, e.g. [[familyhub]]._
+- Portland-local, like [[roselight]].

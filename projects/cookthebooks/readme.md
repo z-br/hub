@@ -3,19 +3,17 @@
 > **Status:** ⚪ older · **Updated:** 2026-06-14
 > Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 
-**One-liner:** Go tool (uses dateparse + Slack webhooks) — finance/accounting automation. Last touched Sep 2024.
+**One-liner:** A recipe / cookbook app written in Go — *not* a finance tool (the name is a pun).
 
 ## Links
 - **Code:** `~/dev/cookthebooks` · [remote](https://github.com/z-br/cookthebooks)
 - **Live:** _tbd_
 
 ## Stack
-Go
+Go · Elasticsearch (recipe search) · web frontend under `web/`
 
 ## Overview
-_Auto-detected from the repo — refine me._
-
-Go tool (uses dateparse + Slack webhooks) — finance/accounting automation. Last touched Sep 2024.
+Recipe/cookbook manager — stores and searches recipes (Elasticsearch-backed), with a `kitchen/` domain layer and a `web/` frontend. The most substantial of the older repos: **509 commits**, your earliest work here (authored as `Greg Passmore`). Dormant since Sep 2024; currently checked out on branch `giveGraphAvis` with a few uncommitted files.
 
 ## Related
-_Add links to related hub projects, e.g. [[familyhub]]._
+-

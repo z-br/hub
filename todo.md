@@ -5,17 +5,21 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
-- [ ] Add a git remote for **FamilyHub Mobile** (local-only, unbacked) → [familyhub-mobile](projects/familyhub-mobile/todo.md)
+- [ ] **Finish `gh` repo deletion of `project-hub`** — run `gh auth refresh -h github.com -s delete_repo` then `gh repo delete z-br/project-hub --yes` (local folder already removed)
+- [ ] **FamilyHub repo state:** establish a `main` branch and commit the RN→SwiftUI transition (~438 uncommitted) → [familyhub](projects/familyhub/todo.md)
+- [ ] **The Rose Light:** review/merge README PR [#33](https://github.com/z-br/theroselight.org/pull/33) → [roselight](projects/roselight/todo.md)
 
 ## 📌 Soon
-- [ ] Delete the empty `~/dev/project-hub` repo (superseded by this hub) → [project-hub](projects/project-hub/readme.md)
+- [ ] Pin down **Wallace Park Tennis** purpose (schedule? ladder? booking?) → [wallacecourts](projects/wallacecourts/readme.md)
+- [ ] Decide: build **blog** or fold it into **homepage** → [blog](projects/blog/readme.md)
 - [ ] Triage [`inbox.md`](inbox.md)
 
 ## 🧊 Someday
-- [ ] Revisit older-but-relevant: menagerie, storyshop, cookthebooks, blog — keep or archive?
+- [ ] Revisit **cookthebooks** (recipe app, 509 commits, dormant) — resurrect or archive?
 
 ## 🌐 Cross-cutting / themes
-- **FamilyHub suite:** FamilyHub (web/API) + FamilyHub Mobile (iOS client) — one product.
+- **FamilyHub:** one product — Next.js web + native SwiftUI iOS in a monorepo (RN app retired).
 - **famfam:** separate — a family-history wiki engine, unrelated to FamilyHub.
 - **Health:** HRV + the CPAP reference repos — one body of work.
 - **Claude-powered:** The Rose Light · famfam (both use the Anthropic API).
+- **Public-facing:** homepage · blog · The Rose Light.

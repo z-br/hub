@@ -17,4 +17,4 @@ A family wiki engine, **not** related to the FamilyHub task app. Flow: members d
 
 ## Related
 - Uses Claude like [[roselight]]; deploys via Coolify.
-- Distinct from the FamilyHub suite ([[familyhub]] / [[familyhub-mobile]]).
+- Distinct from [[familyhub]] (the family *task* app).

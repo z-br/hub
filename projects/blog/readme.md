@@ -1,9 +1,9 @@
 # blog
 
-> **Status:** ⚪ older · **Updated:** 2026-06-14
+> **Status:** ⚪ idea · **Updated:** 2026-06-14
 > Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 
-**One-liner:** Personal blog (Astro). Last touched Oct 2024.
+**One-liner:** Personal blog — Astro starter, scaffolded but never actually built out.
 
 ## Links
 - **Code:** `~/dev/blog` · [remote](https://github.com/z-br/blog)
@@ -13,9 +13,7 @@
 Astro · Tailwind · TypeScript
 
 ## Overview
-_Auto-detected from the repo — refine me._
-
-Personal blog (Astro). Last touched Oct 2024.
+An Astro blog that's still at the starter stage: the only commit is from the Astro create wizard (`houston[bot]`), with ~12 uncommitted local changes. No original posts/customization yet — effectively an **idea**, not an active project. Decide whether to build it or fold blogging into [[homepage]].
 
 ## Related
-_Add links to related hub projects, e.g. [[familyhub]]._
+- Could merge with [[homepage]] (both public-facing personal sites).
