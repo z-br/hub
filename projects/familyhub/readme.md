@@ -15,7 +15,7 @@ Monorepo (`apps/web`, `apps/ios`) · Next.js · NextAuth · Prisma · Postgres �
 ## Overview
 Shared family task management (to-dos / chores / coordination). Pivoted from a separate React Native app to a **monorepo**: `apps/web` (Next.js + NextAuth + Prisma) serves the API and web UI; `apps/ios` is a **native SwiftUI** client. API routes accept Bearer tokens so the iOS app can authenticate. Docs live in the repo (`README.md`, `STACK.md`, `CLAUDE.md`).
 
-> ⚠️ **Repo state:** currently on branch `claude/cool-davinci-FXdiJ` (no `main`), with ~438 uncommitted changes (mostly the old React Native app being deleted). Clean this up — commit/branch to `main` — before more work. See [todo](todo.md).
+> ✅ **Repo hygiene (fixed 2026-06-14):** established `main` as the default branch (was stranded on a `claude/*` branch), removed 433 committed `.next` build artifacts from tracking, and added Next.js/Xcode ignores. Working tree is clean.
 
 ## History
 - The standalone **FamilyHubMobile** (React Native/Expo) repo was **retired and deleted** 2026-06-14 — superseded by the SwiftUI app in `apps/ios`.

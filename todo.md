@@ -5,7 +5,6 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
-- [ ] **FamilyHub repo state:** establish a `main` branch and commit the RN→SwiftUI transition (~438 uncommitted) → [familyhub](projects/familyhub/todo.md)
 - [ ] **The Rose Light:** review/merge README PR [#33](https://github.com/z-br/theroselight.org/pull/33) → [roselight](projects/roselight/todo.md)
 
 ## 📌 Soon
