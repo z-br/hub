@@ -13,7 +13,7 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 ### 🟢 Active
 | Project | What | Code |
 |---|---|---|
-| [DreamPDX](projects/dreampdx/readme.md) | Vite/React/Prisma app (pkg `roselight`) — confirm purpose | `~/dev/dreampdx` |
+| [The Rose Light](projects/roselight/readme.md) | Self-curating Portland news aggregator (React Router/Claude) | `~/dev/theroselight.org` |
 | [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop" (Next.js) | `~/dev/homepage` |
 | [FamilyHub (web)](projects/familyhub/readme.md) | Family org hub, web/backend (TS/Prisma) | `~/dev/Familyhub` |
 | [FamilyHub Mobile](projects/familyhub-mobile/readme.md) | Mobile companion (React Native/Expo) | `~/dev/FamilyHubMobile` |

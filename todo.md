@@ -6,7 +6,6 @@
 
 ## 🔥 Now
 - [ ] Decide: is **famfam** a rewrite of **FamilyHub**, or separate? → [famfam](projects/famfam/todo.md) · [familyhub](projects/familyhub/todo.md)
-- [ ] Confirm what **DreamPDX** (`roselight`) actually is → [dreampdx](projects/dreampdx/todo.md)
 - [ ] Add a git remote for **FamilyHub Mobile** (local-only, unbacked) → [familyhub-mobile](projects/familyhub-mobile/todo.md)
 
 ## 📌 Soon

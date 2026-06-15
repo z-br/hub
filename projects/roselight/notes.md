@@ -1,4 +1,4 @@
-# DreamPDX — Notes
+# The Rose Light — Notes
 
 > Dated journal: decisions, progress, dead-ends. Newest on top.
 
