@@ -5,7 +5,7 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
-- [ ] **The Rose Light:** decide on ~20 leftover no-PR experiment branches (`test2/3`, `tmp`, `commit-normalize/*`, `lint-fix/*`, `coolify`…) — merged-PR branches already pruned → [roselight](projects/roselight/todo.md)
+- [ ] **The Rose Light:** review 7 leftover branches — design (`avant-garde`, `update-site-design`), docs (`docs-backfill`, `backfill-jsdoc`), infra (`coolify`, `r2-backup-cleanup`), and ⭐ `fix-offline-refresh-error` (recent, possibly-wanted bugfix) → [roselight](projects/roselight/todo.md)
 
 ## 📌 Soon
 - [ ] Pin down **Wallace Park Tennis** purpose (schedule? ladder? booking?) → [wallacecourts](projects/wallacecourts/readme.md)
