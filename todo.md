@@ -16,8 +16,8 @@
 - [ ] Revisit **cookthebooks** (recipe app, 509 commits, dormant) — resurrect or archive?
 
 ## 🌐 Cross-cutting / themes
-- **FamilyHub:** one product — Next.js web + native SwiftUI iOS in a monorepo (RN app retired).
-- **famfam:** separate — a family-history wiki engine, unrelated to FamilyHub.
+- **Houseboard:** one product — Next.js web + native SwiftUI iOS in a monorepo (RN app retired).
+- **famfam:** separate — a family-history wiki engine, unrelated to Houseboard.
 - **Health:** HRV + the CPAP reference repos — one body of work.
 - **Claude-powered:** The Rose Light · famfam (both use the Anthropic API).
 - **Public-facing:** homepage · blog · The Rose Light.

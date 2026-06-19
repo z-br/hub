@@ -1,4 +1,4 @@
-# FamilyHub — TODO
+# Houseboard — TODO
 
 > Source of truth for this project's tasks. Promote important ones to the root [`/todo.md`](../../todo.md).
 

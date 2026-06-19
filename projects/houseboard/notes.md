@@ -1,4 +1,4 @@
-# FamilyHub (web) — Notes
+# Houseboard — Notes
 
 > Dated journal: decisions, progress, dead-ends. Newest on top.
 

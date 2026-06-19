@@ -15,7 +15,7 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 |---|---|---|
 | [The Rose Light](projects/roselight/readme.md) | Self-curating Portland news aggregator (React Router/Claude) | `~/dev/theroselight.org` |
 | [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop", Y2K/synthwave (Next.js) | `~/dev/homepage` |
-| [FamilyHub](projects/familyhub/readme.md) | Family task app — monorepo, Next.js web + SwiftUI iOS | `~/dev/Familyhub` |
+| [Houseboard](projects/houseboard/readme.md) | Family task app — monorepo, Next.js web + SwiftUI iOS (was FamilyHub) | `~/dev/Houseboard` |
 | [famfam](projects/famfam/readme.md) | Family-history wiki engine — Claude-organized memories (Next.js) | `~/dev/famfam` |
 
 ### 🟡 Paused
@@ -30,7 +30,7 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 | [cookthebooks](projects/cookthebooks/readme.md) | Go recipe/cookbook app (Elasticsearch search) | `~/dev/cookthebooks` |
 | [blog](projects/blog/readme.md) | Astro blog — scaffolded, not built out | `~/dev/blog` |
 
-> Removed/retired 2026-06-14: **FamilyHubMobile** (deleted — superseded by FamilyHub's SwiftUI iOS app), **project-hub** (deleted — predecessor to this hub), **menagerie** & **storyshop** (dropped from tracking), **databaseball_v1** (not mine — deleted).
+> Removed/retired 2026-06-14: **FamilyHubMobile** (deleted — superseded by Houseboard's SwiftUI iOS app), **project-hub** (deleted — predecessor to this hub), **menagerie** & **storyshop** (dropped from tracking), **databaseball_v1** (not mine — deleted).
 
 ## How this works
 - Each project folder has four files: `readme.md` (overview + status + links), `todo.md` (its tasks), `notes.md` (dated journal), `ideas.md` (backlog).
