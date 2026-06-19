@@ -5,7 +5,7 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
-- [ ] **The Rose Light:** prune stale branches — ~44 remote + 20 local (mostly merged `claude/*` PR branches) → [roselight](projects/roselight/todo.md)
+- [ ] **The Rose Light:** decide on ~20 leftover no-PR experiment branches (`test2/3`, `tmp`, `commit-normalize/*`, `lint-fix/*`, `coolify`…) — merged-PR branches already pruned → [roselight](projects/roselight/todo.md)
 
 ## 📌 Soon
 - [ ] Pin down **Wallace Park Tennis** purpose (schedule? ladder? booking?) → [wallacecourts](projects/wallacecourts/readme.md)

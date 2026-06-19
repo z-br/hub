@@ -6,8 +6,9 @@
 - [ ]
 
 ## Next
-- [ ] Branch cleanup — ~44 remote + 20 local stale branches (mostly `claude/*` PR branches)
+- [ ] Decide on ~20 leftover branches with **no merged PR** (`test2/3`, `tmp`, `commit-normalize/*`, `lint-fix/*`, `coolify`, etc.) — may hold unmerged work, so left in place
 
 ## Done
+- [x] Pruned 19 merged-PR remote branches (remote 45→26) (2026-06-19)
 - [x] Rewrote README + merged PR #33 (2026-06-15)
 - [x] Added to hub (2026-06-14)
