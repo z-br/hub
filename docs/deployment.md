@@ -42,18 +42,61 @@ Status legend: 🟢 done · 🟡 in progress · ⛔ blocked
 | App | URL | Project / App uuid | State |
 |---|---|---|---|
 | [[homepage]] | https://home.zebraproject.org | `y5nolfv9…` / `j1qzqnjl…` | 🟢 live, `running:healthy`, `/` healthcheck |
+| [[cookthebooks]] | https://lab.cookthebooks.app (web) · https://api-lab.cookthebooks.app (API) | `p9rf8cepkn1dhgh0yqs3zml0` / `rkcylgmt8cc2n9d1e5ej527r` | 🟢 live on **lab** domains (Go API + Next.js web + OpenSearch), data migrated; **cutover to prod pending** |
+
+### cookthebooks — a second deploy pattern (Docker Compose from git)
+homepage uses the Nixpacks per-app flow above; cookthebooks needed a multi-service
+stack, so it uses Coolify's **Docker Compose** build pack instead:
+- One git repo (`z-br/cookthebooks`) with `Dockerfile`, `web/Dockerfile`,
+  `docker-compose.yml` → one Coolify "Docker Compose" application = opensearch +
+  api + web. Per-service routing via **explicit Traefik labels** (the
+  `SERVICE_FQDN_*` magic kept regenerating sslip domains).
+- **Shared Postgres without SSH/`pg-provision.sh`:** the compose `api` service
+  joins the **external `coolify` network**, so it resolves
+  `tkinv01f2fpidwklct4n9a8o:5432` directly. Schema isolation is done **in-app**
+  (`DB_SCHEMA` → `CREATE SCHEMA` + `search_path` on boot) instead of pre-provisioning.
+  ⟹ This **answers the old "App↔DB network" open question: join the `coolify`
+  network.** Connection uses `sslmode=disable` (internal, plain).
+- **`cookthebooks.app` is a separate Cloudflare zone** (not `zebraproject.org`);
+  `CF_API_TOKEN` can't see it, so its DNS records are added by hand (or need a
+  scoped token). Tunnel **ingress** edits still work (account-level).
+
+### Host access (for ops / data migration, no Coolify UI)
+The Coolify host is **Colima on a Mac mini**: `ssh -i ~/.ssh/id_ed25519
+cosmo@192.168.50.138`, then use the Mac's `/opt/homebrew/bin/docker` (colima
+context) directly — `colima ssh` fails non-interactively (lima not on PATH).
+Override for scripts: `DOCKER_HOST=unix:///Users/cosmo/.colima/default/docker.sock`
+and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` helper).
+
+## Backups
+- **Shared Postgres: Coolify scheduled backup** id `wsok6jma1m44thioe1ae009t` —
+  `5 7 * * *` (**daily 07:05 UTC**), dumps db `postgres` (**all schemas, incl.
+  every project's**) → **S3** (`s3_storage_id=1`), retention **7 / 7 days**,
+  local disabled. Last run verified `success` + `s3_uploaded`. This covers all
+  schema-per-project apps automatically.
+- **Service volumes are NOT backed up** (Coolify backs up databases only). e.g.
+  cookthebooks' OpenSearch volume — treat such data as derived/rebuildable, or
+  add a separate dump job.
+- **Secrets** live only in Coolify's DB → ensure the Coolify instance itself is
+  backed up; compose/Nixpacks config is in git.
 
 ## Outstanding
 - [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was shown in a chat
-  transcript during setup.
-- [ ] ⛔ **Postgres provisioning untested** — `COOLIFY_SERVER_SSH` still blank in
-  config; can't run `pg-provision.sh check` until it's set.
-- [ ] 🟡 **App↔DB network** — confirm apps share a Coolify network with the shared
-  Postgres so `tkinv…:5432` resolves at runtime.
+  transcript during setup. (cookthebooks currently connects as this admin role —
+  see below.)
+- [x] ✅ **App↔DB network** — resolved: join the external **`coolify`** network;
+  the shared PG resolves at `tkinv01f2fpidwklct4n9a8o:5432` (cookthebooks proves it).
 - [ ] 🟡 **Homepage content** still placeholder (`lib/data.ts`).
+- [ ] 🟡 **cookthebooks → scoped DB role** — it uses the PG **admin** role as a lab
+  shortcut; create a `cookthebooks_app` role owning only its schema.
+- [ ] 🟡 **cookthebooks cutover** — move off **lab** domains to prod (real secrets,
+  prod DNS/ingress, OAuth redirect URIs), then decommission DO droplet + Neon PG.
+- [ ] 🟡 **cookthebooks DNS gaps (Route 53 → Cloudflare)** — missing in the
+  `cookthebooks.app` zone: ACM cert-validation CNAME (renewal), 3× SES DKIM,
+  Postmark DKIM, `cdn-images` → `dpxmcvxvm8wor.cloudfront.net`; `pm-bounces` is
+  wrongly proxied (set grey). See [[cookthebooks]] notes.
 
-## Next steps
-- [ ] Set `COOLIFY_SERVER_SSH` in `~/.config/ship-webapp/config.env`, then `pg-provision.sh check`.
-- [ ] Confirm DB↔app Coolify network connectivity.
-- [ ] (Optional) test-provision a schema end-to-end.
-- [ ] Fill real content in homepage `lib/data.ts` (push auto-redeploys).
+## Notes
+- `COOLIFY_SERVER_SSH` is still blank in config (the `ship-webapp` scripts'
+  `pg-provision.sh` path is untested), **but** the Docker-Compose pattern doesn't
+  need it — see "Host access" above for the working Colima route.
