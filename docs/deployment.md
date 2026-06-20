@@ -44,17 +44,16 @@ Status legend: 🟢 done · 🟡 in progress · ⛔ blocked
 | [[homepage]] | https://home.zebraproject.org | `y5nolfv9…` / `j1qzqnjl…` | 🟢 live, `running:healthy`, `/` healthcheck |
 
 ## Outstanding
-- ⛔ **Postgres provisioning untested** — `COOLIFY_SERVER_SSH` still blank in
+- [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was shown in a chat
+  transcript during setup.
+- [ ] ⛔ **Postgres provisioning untested** — `COOLIFY_SERVER_SSH` still blank in
   config; can't run `pg-provision.sh check` until it's set.
-- 🟡 **App↔DB network** — confirm apps share a Coolify network with the shared
+- [ ] 🟡 **App↔DB network** — confirm apps share a Coolify network with the shared
   Postgres so `tkinv…:5432` resolves at runtime.
-- 🟡 **Homepage content** still placeholder (`lib/data.ts`).
-- 🟡 **Rotate** the shared-Postgres admin password (its DSN was shown in a chat
-  transcript during setup).
+- [ ] 🟡 **Homepage content** still placeholder (`lib/data.ts`).
 
 ## Next steps
-1. Set `COOLIFY_SERVER_SSH` in `~/.config/ship-webapp/config.env`, then
-   `pg-provision.sh check`.
-2. Confirm DB↔app Coolify network connectivity.
-3. (Optional) test-provision a schema end-to-end.
-4. Fill real content in homepage `lib/data.ts` (push auto-redeploys).
+- [ ] Set `COOLIFY_SERVER_SSH` in `~/.config/ship-webapp/config.env`, then `pg-provision.sh check`.
+- [ ] Confirm DB↔app Coolify network connectivity.
+- [ ] (Optional) test-provision a schema end-to-end.
+- [ ] Fill real content in homepage `lib/data.ts` (push auto-redeploys).
