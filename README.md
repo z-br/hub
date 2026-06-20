@@ -4,6 +4,7 @@ My markdown-centric command center for all ongoing projects. **Code lives in its
 
 - **Cross-project tasks:** [`todo.md`](todo.md) — the rollup
 - **Quick capture:** [`inbox.md`](inbox.md) — dump now, sort later
+- **Deployment:** [`docs/deployment.md`](docs/deployment.md) — shared Coolify + Cloudflare Tunnel infra
 - **Start a project:** copy [`projects/_TEMPLATE/`](projects/_TEMPLATE) → `projects/<name>/`
 
 Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired

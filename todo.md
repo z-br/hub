@@ -5,6 +5,8 @@
 > `projects/<name>/todo.md`. Keep this short — if everything's here, nothing is.
 
 ## 🔥 Now
+- [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was exposed in a chat transcript during setup → [deployment](docs/deployment.md)
+- [ ] **Deploy infra:** set `COOLIFY_SERVER_SSH` in `~/.config/ship-webapp/config.env`, then `pg-provision.sh check`; confirm DB↔app Coolify network → [deployment](docs/deployment.md)
 - [ ] **The Rose Light:** review 7 leftover branches — design (`avant-garde`, `update-site-design`), docs (`docs-backfill`, `backfill-jsdoc`), infra (`coolify`, `r2-backup-cleanup`), and ⭐ `fix-offline-refresh-error` (recent, possibly-wanted bugfix) → [roselight](projects/roselight/todo.md)
 
 ## 📌 Soon
@@ -21,3 +23,4 @@
 - **Health:** HRV + the CPAP reference repos — one body of work.
 - **Claude-powered:** The Rose Light · famfam (both use the Anthropic API).
 - **Public-facing:** homepage · blog · The Rose Light.
+- **Deploy:** shared Coolify + Cloudflare Tunnel infra → [`docs/deployment.md`](docs/deployment.md). homepage 🟢 live; roselight/famfam are next candidates.

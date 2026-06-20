@@ -7,7 +7,7 @@
 
 ## Links
 - **Code:** `~/dev/homepage` · [remote](https://github.com/z-br/homepage)
-- **Live:** _tbd_
+- **Live:** https://home.zebraproject.org 🟢 (`running:healthy`) — first app on the [Coolify setup](../../docs/deployment.md)
 
 ## Stack
 Next.js (App Router) · React · Tailwind CSS v4 · TypeScript
