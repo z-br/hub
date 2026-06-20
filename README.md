@@ -31,6 +31,11 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 | [cookthebooks](projects/cookthebooks/readme.md) | Go recipe/cookbook app (Elasticsearch search) | `~/dev/cookthebooks` |
 | [blog](projects/blog/readme.md) | Astro blog — scaffolded, not built out | `~/dev/blog` |
 
+### 🔗 Domains / assets (no repo)
+| Asset | What | Where |
+|---|---|---|
+| [lovejoy.link](projects/lovejoy-link/readme.md) | 🟢 Vanity domain redirecting to a Zillow listing | DNS/redirect (not a repo) |
+
 > Removed/retired 2026-06-14: **FamilyHubMobile** (deleted — superseded by Houseboard's SwiftUI iOS app), **project-hub** (deleted — predecessor to this hub), **menagerie** & **storyshop** (dropped from tracking), **databaseball_v1** (not mine — deleted).
 
 ## How this works
