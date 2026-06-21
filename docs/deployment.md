@@ -5,6 +5,11 @@ documents the common infra.** Automated by the `ship-webapp` Claude skill
 (`~/.claude/skills/ship-webapp/`). No secrets here — those live in
 `~/.config/ship-webapp/config.env` (outside any repo).
 
+🔒 **Security posture + hardening checklist:** see [[hardening]]. The Coolify
+dashboard (`ccc.zebraproject.org`) is behind **Cloudflare Access** (email policy);
+`/webhooks/*` and `/api/*` are bypassed so GitHub deploys and the Coolify API keep
+working (each still has its own auth).
+
 Status legend: 🟢 done · 🟡 in progress · ⛔ blocked
 
 ## Infrastructure
