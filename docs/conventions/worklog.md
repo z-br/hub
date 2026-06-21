@@ -20,8 +20,7 @@ that collision. A repo can still have a real `CHANGELOG.md` for releases.
 
 ## Format
 
-Newest on top. One `## YYYY-MM-DD` heading per day; entries are timestamped
-bullets under it.
+Newest on top. Each entry is a single timestamped bullet — `MM/DD/YYYY HH:MM`.
 
 ```markdown
 # <Project> — Worklog
@@ -29,15 +28,12 @@ bullets under it.
 > Running log of agent activity and work performed. Newest on top.
 > Convention: ~/dev/hub/docs/conventions/worklog.md
 
-## 2026-06-20
-- 21:40 — Switched session auth to httpOnly cookies; fixed logout not clearing state.
-- 14:05 — Added Prisma index on `article.publishedAt` (list query was doing a full scan).
-
-## 2026-06-19
-- 18:22 — Scaffolded the worker queue; wired it to the digest cron.
+- 06/20/2026 21:40 — Switched session auth to httpOnly cookies; fixed logout not clearing state.
+- 06/20/2026 14:05 — Added Prisma index on `article.publishedAt` (list query was doing a full scan).
+- 06/19/2026 18:22 — Scaffolded the worker queue; wired it to the digest cron.
 ```
 
-- **Time:** local `HH:MM` is enough; the day heading carries the date.
+- **Timestamp:** `MM/DD/YYYY HH:MM`, local time, at the start of each bullet.
 - **Entry:** what changed and *why*, in one line. Link files/PRs when useful.
 - **Attribution (optional):** add `(agent)` or a tool name if it helps later.
 
@@ -48,7 +44,7 @@ bullets under it.
 - **Skip** read-only or exploration-only sessions. This logs work performed, not
   every visit.
 - Don't batch a week of work into one line; one entry per meaningful change is the
-  target, grouped under the day.
+  target.
 
 ## How a repo enforces this
 
