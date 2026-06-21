@@ -93,8 +93,10 @@ and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` he
 - [ ] 🟡 **Homepage content** still placeholder (`lib/data.ts`).
 - [ ] 🟡 **cookthebooks → scoped DB role** — it uses the PG **admin** role as a lab
   shortcut; create a `cookthebooks_app` role owning only its schema.
-- [ ] 🟡 **cookthebooks cutover** — move off **lab** domains to prod (real secrets,
-  prod DNS/ingress, OAuth redirect URIs), then decommission DO droplet + Neon PG.
+- [x] ✅ **cookthebooks cutover DONE** (2026-06-21) — live on prod
+  `cookthebooks.app`/`api.cookthebooks.app` from `main`; **Vercel + Neon + DigitalOcean
+  decommissioned** (old DNS records removed, no dangling CNAMEs). AWS S3/CloudFront
+  (`cdn-images`) kept for images.
 - [x] ✅ **cookthebooks DNS gaps (Route 53 → Cloudflare)** — fixed 2026-06-20:
   ACM cert-validation CNAME, 3× SES DKIM, Postmark DKIM, `cdn-images` →
   `dpxmcvxvm8wor.cloudfront.net` (grey), `pm-bounces` set grey. CDN image URLs

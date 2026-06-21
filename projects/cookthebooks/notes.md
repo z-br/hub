@@ -2,6 +2,12 @@
 
 > Dated journal: decisions, progress, dead-ends. Newest on top.
 
+## 2026-06-21 — old infra decommissioned
+- Deleted **Neon** (Postgres), **Vercel** (web), **DigitalOcean** (droplet OpenSearch
+  + App Platform `api2`). Stale DNS (`search`/`api2`/`app`/`dev-api`/`ssr`) removed —
+  no dangling CNAMEs. Coolify now deploys from `main`. **Kept:** AWS S3 + CloudFront
+  (`cdn-images`) for images. Remaining: S3 upload keys, scoped DB role, rotate GCP key.
+
 ## 2026-06-20 — PROD cutover complete
 - Flipped `cookthebooks.app` + `www` (was Vercel) and `api.cookthebooks.app` (new;
   old prod API was `api2` on DO App Platform) → the Cloudflare tunnel → Coolify.
