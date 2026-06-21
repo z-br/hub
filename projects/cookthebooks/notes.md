@@ -13,8 +13,8 @@
   old prod API was `api2` on DO App Platform) → the Cloudflare tunnel → Coolify.
   Verified: apex serves Coolify Next.js (no `x-vercel`), API + Postgres + OpenSearch
   all 200. Web rebuilt with `NEXT_PUBLIC_API=https://api.cookthebooks.app`.
-- **Remaining:** test OAuth login; decommission Vercel + DO (`api2`, droplet) + Neon;
-  S3 upload keys; scoped DB role; rotate leaked/chat-shared secrets; retire lab domains.
+- **Remaining (at the time):** _superseded — Vercel/DO/Neon decommissioned 2026-06-21
+  (see entry above). Still open: S3 upload keys, scoped DB role, GCP key rotation._
 
 ## 2026-06-20 — migrated to Coolify home cloud
 - Moved off DigitalOcean → **Coolify Docker-Compose** stack (Go API + Next.js web

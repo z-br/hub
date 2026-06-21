@@ -1,6 +1,6 @@
 # cookthebooks
 
-> **Status:** 🟢 active · **Updated:** 2026-06-20
+> **Status:** 🟢 active · **Updated:** 2026-06-21
 > Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 
 **One-liner:** A recipe / cookbook app written in Go — *not* a finance tool (the name is a pun).
@@ -13,16 +13,14 @@
 ## Stack
 Go API · Next.js web (`web/`) · OpenSearch (search) · Postgres · AWS S3 + CloudFront (images)
 
-## Status (2026-06-20)
-**Migrated off DigitalOcean onto the Coolify home cloud** as a Docker-Compose
-stack (api + web + opensearch), shared Postgres (schema `cookthebooks`), behind
-the Cloudflare tunnel on temporary **lab** domains. All data migrated
-(OpenSearch from the DO droplet, Postgres from **Neon**) and verified end-to-end.
-- **Next:** confirm backups (PG covered daily; see `docs/operations.md`), then
-  **cut over prod** to this instance and decommission DO + Neon.
-- **DNS cleanup:** several `cookthebooks.app` records didn't survive the Route 53
-  → Cloudflare move (ACM validation, SES/Postmark DKIM, `cdn-images`); see
-  [[deployment]] Outstanding.
+## Status (2026-06-21)
+**Live on prod, fully on the Coolify home cloud.** Docker-Compose stack
+(api + web + opensearch) on the shared Postgres (schema `cookthebooks`), behind the
+Cloudflare tunnel. Cut over from Vercel/DO on 2026-06-20–21; **DigitalOcean, Neon,
+and Vercel decommissioned** and stale DNS cleaned up (no dangling CNAMEs). Kept AWS
+S3 + CloudFront (`cdn-images`) for images.
+- **Remaining (hygiene only):** scoped S3 upload keys; a scoped DB role (currently
+  connects as the shared-PG admin); rotate the GCP key. See `notes.md` (2026-06-21).
 
 ## Overview
 Recipe/cookbook manager — stores and searches recipes (OpenSearch-backed), with a `kitchen/` domain layer and a `web/` frontend. The most substantial of the older repos: **509 commits**, your earliest work here (authored as `Greg Passmore`). Dormant since Sep 2024 until the 2026-06 Coolify migration.
