@@ -43,6 +43,7 @@ Status legend: 🟢 done · 🟡 in progress · ⛔ blocked
 |---|---|---|---|
 | [[homepage]] | https://home.zebraproject.org | `y5nolfv9…` / `j1qzqnjl…` | 🟢 live, `running:healthy`, `/` healthcheck |
 | [[cookthebooks]] | https://cookthebooks.app (web) · https://api.cookthebooks.app (API) | `p9rf8cepkn1dhgh0yqs3zml0` / `rkcylgmt8cc2n9d1e5ej527r` | 🟢 **live on PROD** (cut over from Vercel/DO 2026-06-20; Go API + Next.js web + OpenSearch + shared PG). Lab domains still route as fallback. |
+| [[roselight]] | https://lab.theroselight.org (web, lab) · prod `theroselight.org` · previews `<PR#>.theroselight.xyz` | web `ckgxbv0nlhgh0v52jxh2ul07` · worker `m6zinqoryw8iivs2vcptxusa` | 🟢 live on lab (repo `z-br/dreampdx`, from `main`). Two apps: web (`Dockerfile`) + node-cron worker (`Dockerfile.worker`, no public route — RSS sync + weekly digest). Worker is the sole RSS ingester; if stories go stale, the worker is down. |
 
 ### cookthebooks — a second deploy pattern (Docker Compose from git)
 homepage uses the Nixpacks per-app flow above; cookthebooks needed a multi-service
