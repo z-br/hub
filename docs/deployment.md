@@ -124,11 +124,13 @@ Coolify's own Postgres (`coolify-db`) is **not** owned by role `postgres` (use t
   onto a fresh Coolify can't decrypt them. (Applies to all projects on this host.)
 
 ## Outstanding
-- [ ] 🔥 **dreampdx (`m6zinqoryw8iivs2vcptxusa`, Coolify app #2, repo `z-br/dreampdx`)
-  is crash-looping** — boots and dies in ~0.5s with
-  `ERR_MODULE_NOT_FOUND: /app/app/lib/digest/build.server` (missing import, not OOM);
-  8000+ restarts, leaking VM inotify slots. **Stop it on the host** and fix the import
-  in the dreampdx repo before redeploying.
+- [x] ✅ **dreampdx/roselight worker crash loop — FIXED (2026-06-21).** The worker
+  (`m6zinqoryw8iivs2vcptxusa`, repo `z-br/theroselight.org`, formerly `dreampdx`) was
+  booting and dying in ~0.5s with `ERR_MODULE_NOT_FOUND: /app/app/lib/digest/build.server`
+  (8000+ restarts, leaking VM inotify slots) because `Dockerfile.worker` didn't
+  `COPY app ./app` — the worker imports server modules from `../app/lib/*`. Fixed in
+  PR #34; worker now `running` (0 restarts) with a healthchecks.io heartbeat + Coolify
+  alerts. roselight is live on prod ([[roselight]]).
 - [ ] 🔒 **Lock down LAN exposure** — bind Lima/Docker port-forwards to `127.0.0.1`
   and/or front Coolify admin (`:8000`) + apps with Cloudflare Access (see Networking).
 - [ ] 🛡️ **Raise VM `fs.inotify.max_user_instances` to 512+** (persisted) so a future
