@@ -9,7 +9,7 @@ Legend: ⚫ retired
 
 | Project | What it was | Code | Notes |
 |---|---|---|---|
-| **storyshop** | _(concept TBD)_ — Remix "Indie Stack" app (SQLite/Prisma/Tailwind/Cypress) | `~/dev/storyshop` | Deployed to fly.io (apps `storyshop` + `storyshop-staging`, free tier) but never launched. **Archive pending** — no intent to return; destroy/suspend the fly apps. Dropped from hub tracking 2026-06-14. |
+| **storyshop** | _(concept TBD)_ — Remix "Indie Stack" app (SQLite/Prisma/Tailwind/Cypress) | `~/dev/storyshop` (local only) | Was deployed to fly.io but never launched. **Archived 2026-06-20** — fly apps and account deleted; local repo retained. Dropped from hub tracking 2026-06-14. |
 | **menagerie** | _(concept TBD)_ — Remix + Vite app | `~/dev/menagerie` | Never deployed. Dropped from hub tracking 2026-06-14. |
 
 ## ↪️ Superseded / folded in
