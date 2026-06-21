@@ -91,10 +91,10 @@ and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` he
   shortcut; create a `cookthebooks_app` role owning only its schema.
 - [ ] 🟡 **cookthebooks cutover** — move off **lab** domains to prod (real secrets,
   prod DNS/ingress, OAuth redirect URIs), then decommission DO droplet + Neon PG.
-- [ ] 🟡 **cookthebooks DNS gaps (Route 53 → Cloudflare)** — missing in the
-  `cookthebooks.app` zone: ACM cert-validation CNAME (renewal), 3× SES DKIM,
-  Postmark DKIM, `cdn-images` → `dpxmcvxvm8wor.cloudfront.net`; `pm-bounces` is
-  wrongly proxied (set grey). See [[cookthebooks]] notes.
+- [x] ✅ **cookthebooks DNS gaps (Route 53 → Cloudflare)** — fixed 2026-06-20:
+  ACM cert-validation CNAME, 3× SES DKIM, Postmark DKIM, `cdn-images` →
+  `dpxmcvxvm8wor.cloudfront.net` (grey), `pm-bounces` set grey. CDN image URLs
+  verified 200 from CloudFront.
 
 ## Notes
 - `COOLIFY_SERVER_SSH` is still blank in config (the `ship-webapp` scripts'
