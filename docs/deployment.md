@@ -77,8 +77,13 @@ and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` he
 - **Service volumes are NOT backed up** (Coolify backs up databases only). e.g.
   cookthebooks' OpenSearch volume — treat such data as derived/rebuildable, or
   add a separate dump job.
-- **Secrets** live only in Coolify's DB → ensure the Coolify instance itself is
-  backed up; compose/Nixpacks config is in git.
+- **Coolify's own config/secrets are a SEPARATE, unverified backup.** The daily
+  job above backs up the **app data** DB only — not `coolify-db` (resource configs,
+  env vars, encrypted secrets), which isn't a managed resource and isn't exposed by
+  the API. Verify/enable it in **Settings → Backup** (UI), and back up `APP_KEY`
+  (`/data/coolify/source/.env`) — without it a `coolify-db` backup can't decrypt
+  secrets. Mitigation: compose is in git + secrets documented, so the app is
+  rebuildable; keep an off-box copy of secrets + APP_KEY regardless.
 
 ## Outstanding
 - [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was shown in a chat
