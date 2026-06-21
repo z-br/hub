@@ -77,13 +77,12 @@ and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` he
 - **Service volumes are NOT backed up** (Coolify backs up databases only). e.g.
   cookthebooks' OpenSearch volume — treat such data as derived/rebuildable, or
   add a separate dump job.
-- **Coolify's own config/secrets are a SEPARATE, unverified backup.** The daily
-  job above backs up the **app data** DB only — not `coolify-db` (resource configs,
-  env vars, encrypted secrets), which isn't a managed resource and isn't exposed by
-  the API. Verify/enable it in **Settings → Backup** (UI), and back up `APP_KEY`
-  (`/data/coolify/source/.env`) — without it a `coolify-db` backup can't decrypt
-  secrets. Mitigation: compose is in git + secrets documented, so the app is
-  rebuildable; keep an off-box copy of secrets + APP_KEY regardless.
+- **Coolify's own config/secrets ARE backed up too** (separate from the app-data
+  job): `coolify-db` (resource configs, env vars, encrypted secrets) is dumped
+  **daily → S3, ~520 KB, success** (confirmed in the UI; it's an internal backup,
+  not shown in `/api/v1/databases`). ⚠️ The dump's secrets are encrypted with
+  **`APP_KEY`** (`/data/coolify/source/.env`) — keep that off-box or a restore
+  onto a fresh Coolify can't decrypt them. (Applies to all projects on this host.)
 
 ## Outstanding
 - [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was shown in a chat
