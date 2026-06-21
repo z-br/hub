@@ -15,7 +15,7 @@ React Router v7 · React 19 · Tailwind v4 · PostgreSQL/Prisma 7 · node-cron w
 ## Overview
 Two processes share one Postgres DB: a **web app** (newspaper UI + editor dashboard) and a **background worker**. The worker syncs RSS every 15 min, uses Claude to categorize and score posts 0–100 (`aiFeatureScore`), aggregates analytics nightly, and emails a curated weekly digest (Sun 8am editor preview, 9am subscriber send, PT). Editors can override featuring and prune the digest.
 
-Deployed as a Docker stack on a DigitalOcean droplet. Repo uses feature-branch + PR workflow.
+Deployed on the self-hosted **Coolify** lab (Mac mini): web via Nixpacks, worker via `Dockerfile.worker`, behind a Cloudflare Tunnel. Migrated off DigitalOcean 2026-06-21 (prod DB copied into the shared Coolify Postgres; DO retired). Repo uses feature-branch + PR workflow.
 
 ## Related
 - Family of personal sites: [[homepage]], [[blog]]
