@@ -5,6 +5,7 @@ My markdown-centric command center for all ongoing projects. **Code lives in its
 - **Cross-project tasks:** [`todo.md`](todo.md) — the rollup
 - **Quick capture:** [`inbox.md`](inbox.md) — dump now, sort later
 - **Deployment:** [`docs/deployment.md`](docs/deployment.md) — shared Coolify + Cloudflare Tunnel infra
+- **Archive:** [`docs/archive.md`](docs/archive.md) — retired & never-launched projects
 - **Start a project:** copy [`projects/_TEMPLATE/`](projects/_TEMPLATE) → `projects/<name>/`
 
 Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
@@ -36,7 +37,7 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 |---|---|---|
 | [lovejoy.link](projects/lovejoy-link/readme.md) | 🟢 Vanity domain redirecting to a Zillow listing | DNS/redirect (not a repo) |
 
-> Removed/retired 2026-06-14: **FamilyHubMobile** (deleted — superseded by Houseboard's SwiftUI iOS app), **project-hub** (deleted — predecessor to this hub), **menagerie** & **storyshop** (dropped from tracking), **databaseball_v1** (not mine — deleted).
+> Retired, dropped, and never-launched projects live in [`docs/archive.md`](docs/archive.md).
 
 ## How this works
 - Each project folder has four files: `readme.md` (overview + status + links), `todo.md` (its tasks), `notes.md` (dated journal), `ideas.md` (backlog).
