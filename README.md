@@ -6,6 +6,7 @@ My markdown-centric command center for all ongoing projects. **Code lives in its
 - **Quick capture:** [`inbox.md`](inbox.md) — dump now, sort later
 - **Deployment:** [`docs/deployment.md`](docs/deployment.md) — shared Coolify + Cloudflare Tunnel infra
 - **Archive:** [`docs/archive.md`](docs/archive.md) — retired & never-launched projects
+- **Worklog convention:** [`docs/conventions/worklog.md`](docs/conventions/worklog.md) — every repo keeps a timestamped `WORKLOG.md` of agent activity
 - **Start a project:** copy [`projects/_TEMPLATE/`](projects/_TEMPLATE) → `projects/<name>/`
 
 Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
@@ -44,3 +45,4 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 - A project's `todo.md` is the **source of truth** for its tasks. The root [`todo.md`](todo.md) is a **hand-curated rollup** of the cross-cutting / high-priority ones, linking back.
 - Tasks use GitHub task lists (`- [ ]`) so they render as checkboxes on GitHub and in editors.
 - Link between projects with `[[project-slug]]` wiki-style references.
+- Each **code repo** keeps a timestamped `WORKLOG.md` of agent activity at its root — enforced by the repo's `AGENTS.md`/`CLAUDE.md`. See [`docs/conventions/worklog.md`](docs/conventions/worklog.md).
