@@ -2,6 +2,14 @@
 
 > Dated journal: decisions, progress, dead-ends. Newest on top.
 
+## 2026-06-20 — PROD cutover complete
+- Flipped `cookthebooks.app` + `www` (was Vercel) and `api.cookthebooks.app` (new;
+  old prod API was `api2` on DO App Platform) → the Cloudflare tunnel → Coolify.
+  Verified: apex serves Coolify Next.js (no `x-vercel`), API + Postgres + OpenSearch
+  all 200. Web rebuilt with `NEXT_PUBLIC_API=https://api.cookthebooks.app`.
+- **Remaining:** test OAuth login; decommission Vercel + DO (`api2`, droplet) + Neon;
+  S3 upload keys; scoped DB role; rotate leaked/chat-shared secrets; retire lab domains.
+
 ## 2026-06-20 — migrated to Coolify home cloud
 - Moved off DigitalOcean → **Coolify Docker-Compose** stack (Go API + Next.js web
   + OpenSearch) on lab domains `lab` / `api-lab.cookthebooks.app`.

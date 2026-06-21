@@ -42,7 +42,7 @@ Status legend: 🟢 done · 🟡 in progress · ⛔ blocked
 | App | URL | Project / App uuid | State |
 |---|---|---|---|
 | [[homepage]] | https://home.zebraproject.org | `y5nolfv9…` / `j1qzqnjl…` | 🟢 live, `running:healthy`, `/` healthcheck |
-| [[cookthebooks]] | https://lab.cookthebooks.app (web) · https://api-lab.cookthebooks.app (API) | `p9rf8cepkn1dhgh0yqs3zml0` / `rkcylgmt8cc2n9d1e5ej527r` | 🟢 live on **lab** domains (Go API + Next.js web + OpenSearch), data migrated; **cutover to prod pending** |
+| [[cookthebooks]] | https://cookthebooks.app (web) · https://api.cookthebooks.app (API) | `p9rf8cepkn1dhgh0yqs3zml0` / `rkcylgmt8cc2n9d1e5ej527r` | 🟢 **live on PROD** (cut over from Vercel/DO 2026-06-20; Go API + Next.js web + OpenSearch + shared PG). Lab domains still route as fallback. |
 
 ### cookthebooks — a second deploy pattern (Docker Compose from git)
 homepage uses the Nixpacks per-app flow above; cookthebooks needed a multi-service

@@ -7,7 +7,7 @@
 
 ## Links
 - **Code:** `~/dev/cookthebooks` · [remote](https://github.com/z-br/cookthebooks)
-- **Live (lab):** https://lab.cookthebooks.app (web) · https://api-lab.cookthebooks.app (API)
+- **Live (prod):** https://cookthebooks.app (web) · https://api.cookthebooks.app (API) — on Coolify since 2026-06-20
 - **Ops/backup:** repo `docs/operations.md` · **Infra:** [[deployment]]
 
 ## Stack
