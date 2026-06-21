@@ -16,10 +16,10 @@ Status legend: 🟢 done · 🟡 in progress · ⛔ blocked
 | Piece | Value |
 |---|---|
 | Coolify API | `https://ccc.zebraproject.org` |
-| Server | `localhost` · `pf5pdmdxtiuuwqj563yl4l04` · `10.0.1.1` (single host) |
+| Server | `localhost` · `pf5pdmdxtiuuwqj563yl4l04` · `10.0.1.1` (Coolify-internal) · **LAN/SSH `192.168.50.138`** (Mac mini `Cosmos-Mac-mini.local`, macOS 26, Apple Silicon; Docker runs in a **Colima/Lima VM**) |
 | Build | Nixpacks (`next build` / `next start`, no Dockerfile) |
 | Source | GitHub (`z-br/*`), deploys from `main` via Coolify GitHub App `handsome-hummingbird` (installation `117895640`, all-repo access) |
-| Tunnel | Cloudflare **`TheRoseLight`** (`958ef22e-…`), remotely-managed, on the Coolify host → Traefik `localhost:80` |
+| Tunnel | Cloudflare **`TheRoseLight`** (`958ef22e-…`), remotely-managed → Traefik `localhost:80`. **Connector runs as a `cloudflared` process _inside_ the Colima VM** (not the Mac host, not a container): `/usr/bin/cloudflared --no-autoupdate tunnel run --token …`. Find it: `docker run --rm --pid=host alpine sh -c 'ps aux \| grep cloudflared'`. |
 | DNS/TLS | Cloudflare terminates TLS at edge; apps use **`http://` domains** in Coolify |
 | Shared DB | `standalone-postgresql`, container/host `tkinv01f2fpidwklct4n9a8o`, db `postgres`, **internal-only** |
 
@@ -73,6 +73,39 @@ cosmo@192.168.50.138`, then use the Mac's `/opt/homebrew/bin/docker` (colima
 context) directly — `colima ssh` fails non-interactively (lima not on PATH).
 Override for scripts: `DOCKER_HOST=unix:///Users/cosmo/.colima/default/docker.sock`
 and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` helper).
+To inspect the **VM's** kernel/limits/processes from the Mac (lima not on PATH),
+shell in via a host-namespace container:
+`docker run --rm --privileged --pid=host --net=host alpine sh -c '…'`.
+Coolify's own Postgres (`coolify-db`) is **not** owned by role `postgres` (use the
+`coolify` role); app names ↔ UUIDs are in its `applications` table.
+
+## Networking & exposure (audited 2026-06-20)
+- **Internet → apps: only via the Cloudflare Tunnel** (outbound connector in the VM).
+  No inbound router ports are needed or expected — the mini is **not** directly
+  internet-reachable through this design. macOS **Application Firewall is OFF**
+  (low impact given no port-forwarding, but defense-in-depth would turn it on).
+- **LAN ⚠️ — container ports are forwarded to `0.0.0.0` on the Mac**, so any device
+  on the home network can reach them at `192.168.50.138`, **bypassing Cloudflare**:
+  `:80`/`:443` Traefik (all apps by Host header), `:8000` **Coolify admin login**,
+  `:6001-6002` realtime, `:8080` Traefik (no usable dashboard response — not exposed).
+  Lima binds these on all interfaces (its SSH port-forward mux: the `ssh *:80…` LISTENs
+  on the host are Lima, **not** rogue tunnels). To lock down: bind forwards to
+  `127.0.0.1` and/or put **Cloudflare Access** in front of admin + sensitive apps
+  before hosting anything important here.
+- The tunnel **token is visible in the VM process args** (`ps`) — needs host access
+  to read, so low risk; rotate if leaked.
+
+## Host gotchas / failure modes
+- **Scarcest VM resource = inotify instances** (`fs.inotify.max_user_instances = 128`;
+  ~44 in use at idle). Everything else has huge headroom (fd-max effectively unlimited,
+  conntrack 69/262144, host `kern.maxfiles` 245760). A **crash-looping app** (boots,
+  grabs watchers/sockets, dies, repeat) can exhaust the 128 inotify slots VM-wide →
+  unrelated apps that need a watcher start failing → "**whole mini down until reboot**"
+  (reboot resets the counter). This is the documented cause of the past outage.
+  Mitigation TODO: raise `max_user_instances` to 512+ and persist it across VM restarts.
+- **Check for crash loops:** `docker ps -a` for `Restarting`, or sort by
+  `{{.RestartCount}}` via `docker inspect`. Coolify deploys default to
+  `restart=unless-stopped` with **no retry cap**, so a broken build restarts forever.
 
 ## Backups
 - **Shared Postgres: Coolify scheduled backup** id `wsok6jma1m44thioe1ae009t` —
@@ -91,6 +124,15 @@ and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` he
   onto a fresh Coolify can't decrypt them. (Applies to all projects on this host.)
 
 ## Outstanding
+- [ ] 🔥 **dreampdx (`m6zinqoryw8iivs2vcptxusa`, Coolify app #2, repo `z-br/dreampdx`)
+  is crash-looping** — boots and dies in ~0.5s with
+  `ERR_MODULE_NOT_FOUND: /app/app/lib/digest/build.server` (missing import, not OOM);
+  8000+ restarts, leaking VM inotify slots. **Stop it on the host** and fix the import
+  in the dreampdx repo before redeploying.
+- [ ] 🔒 **Lock down LAN exposure** — bind Lima/Docker port-forwards to `127.0.0.1`
+  and/or front Coolify admin (`:8000`) + apps with Cloudflare Access (see Networking).
+- [ ] 🛡️ **Raise VM `fs.inotify.max_user_instances` to 512+** (persisted) so a future
+  crash loop can't wedge the whole host (see Host gotchas).
 - [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was shown in a chat
   transcript during setup. (cookthebooks currently connects as this admin role —
   see below.)
