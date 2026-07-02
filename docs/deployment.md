@@ -87,13 +87,19 @@ and `DOCKER_CONFIG=/tmp/dkrcfg` (empty `{}`, to skip the `credsStore=desktop` he
 
 ## Outstanding
 - [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was shown in a chat
-  transcript during setup. (cookthebooks currently connects as this admin role —
-  see below.)
+  transcript during setup. ⚠️ Recon 07/02/2026: **cookthebooks api AND roselight
+  web + worker all connect as this admin role** (roselight on schema `public`,
+  no scoped role anywhere). Full plan: [runbook](runbooks/pg-scoped-roles-and-rotation.md)
+  — scoped roles first, then rotate. ⛔ Blocked on LAN access to the mini.
 - [x] ✅ **App↔DB network** — resolved: join the external **`coolify`** network;
   the shared PG resolves at `tkinv01f2fpidwklct4n9a8o:5432` (cookthebooks proves it).
 - [ ] 🟡 **Homepage content** still placeholder (`lib/data.ts`).
-- [ ] 🟡 **cookthebooks → scoped DB role** — it uses the PG **admin** role as a lab
-  shortcut; create a `cookthebooks_app` role owning only its schema.
+- [ ] 🟡 **Scoped DB roles** — create `cookthebooks_app` *and* `roselight_app`;
+  no app should keep the PG admin role. See the
+  [runbook](runbooks/pg-scoped-roles-and-rotation.md).
+- [ ] 🟡 **wallacecourts is deployed but undocumented** — Coolify app
+  `becbj1x0ufc3hxjt09nitc4n` (no DB) exists; add it to the Deployed apps table
+  (and to the hub project page) or retire it.
 - [x] ✅ **cookthebooks cutover DONE** (2026-06-21) — live on prod
   `cookthebooks.app`/`api.cookthebooks.app` from `main`; **Vercel + Neon + DigitalOcean
   decommissioned** (old DNS records removed, no dangling CNAMEs). AWS S3/CloudFront
