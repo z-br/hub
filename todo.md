@@ -7,7 +7,8 @@
 ## 🔥 Now
 - [ ] 🔒 **Rotate the shared-Postgres admin password** — its DSN was exposed in a chat transcript during setup → [deployment](docs/deployment.md)
 - [ ] **Deploy infra:** set `COOLIFY_SERVER_SSH` in `~/.config/ship-webapp/config.env`, then `pg-provision.sh check`; confirm DB↔app Coolify network → [deployment](docs/deployment.md)
-- [ ] **The Rose Light:** review 7 leftover branches — design (`avant-garde`, `update-site-design`), docs (`docs-backfill`, `backfill-jsdoc`), infra (`coolify`, `r2-backup-cleanup`), and ⭐ `fix-offline-refresh-error` (recent, possibly-wanted bugfix) → [roselight](projects/roselight/todo.md)
+- [ ] **The Rose Light:** review the 4 rebased design previews (PRs #8/#48/#49/#22 → `<PR#>.theroselight.xyz`) — pick a direction or close them → [roselight](projects/roselight/todo.md)
+- [ ] **The Rose Light events, Phase 0:** review + send the [Everout outreach email](projects/roselight/everout-outreach-draft.md), then greenlight shadow ingestion → [events-plan](projects/roselight/events-plan.md)
 
 ## 📌 Soon
 - [ ] Pin down **Wallace Park Tennis** purpose (schedule? ladder? booking?) → [wallacecourts](projects/wallacecourts/readme.md)
