@@ -110,15 +110,19 @@ Coolify's own Postgres (`coolify-db`) is **not** owned by role `postgres` (use t
 ## Backups
 - **Shared Postgres: Coolify scheduled backup** id `wsok6jma1m44thioe1ae009t` —
   `5 7 * * *` (**daily 07:05 UTC**), dumps db `postgres` (**all schemas, incl.
-  every project's**) → **S3** (`s3_storage_id=1`), retention **7 / 7 days**,
-  local disabled. Last run verified `success` + `s3_uploaded`. This covers all
-  schema-per-project apps automatically.
+  every project's**) → **Cloudflare R2** via Coolify's S3-compatible storage
+  (`s3_storage_id=1`; Coolify labels it "S3" but the endpoint is R2), retention
+  **7 / 7 days**, local disabled. Last run verified `success` + `s3_uploaded`.
+  This covers all schema-per-project apps automatically. Managed entirely
+  through Coolify — no standalone backup workers (the old
+  `cloudflare-r2-backup-cleanup` branch/worker is retired; retention is
+  Coolify's own).
 - **Service volumes are NOT backed up** (Coolify backs up databases only). e.g.
   cookthebooks' OpenSearch volume — treat such data as derived/rebuildable, or
   add a separate dump job.
 - **Coolify's own config/secrets ARE backed up too** (separate from the app-data
   job): `coolify-db` (resource configs, env vars, encrypted secrets) is dumped
-  **daily → S3, ~520 KB, success** (confirmed in the UI; it's an internal backup,
+  **daily → R2 (same S3-compatible storage), ~520 KB, success** (confirmed in the UI; it's an internal backup,
   not shown in `/api/v1/databases`). ⚠️ The dump's secrets are encrypted with
   **`APP_KEY`** (`/data/coolify/source/.env`) — keep that off-box or a restore
   onto a fresh Coolify can't decrypt them. (Applies to all projects on this host.)
