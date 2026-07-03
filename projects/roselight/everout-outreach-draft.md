@@ -1,10 +1,13 @@
-# DRAFT — Index Newspapers / Everout outreach email
+# DRAFT — EverOut outreach email
 
 > **Status: DRAFT — not sent.** Owner reviews, edits, and sends personally
 > (or explicitly approves sending). Phase 0 of [events-plan](events-plan.md).
-> Suggested recipients: Everout general contact (hello@ / info@ via
-> everout.com/contact) and/or Portland Mercury editorial. Verify current
-> addresses before sending.
+> **Send to: `portland@everout.com`** (EverOut's Portland editorial inbox —
+> confirmed via their contact page 2026-07-03). Fallback/general:
+> `hello@everout.com`. Don't use `ads@everout.com` (advertising).
+> Note: EverOut/The Stranger/Portland Mercury were sold by Index Newspapers
+> to a new Seattle-based owner in mid-2024 — address the EverOut team, not
+> "Index Newspapers."
 
 ---
 

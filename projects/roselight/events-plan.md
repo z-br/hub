@@ -78,7 +78,7 @@ with the ruling. Enable only if Phase-1/2 volume metrics show category gaps.*
 ### Everout / Willamette Week / Portland Mercury
 **No ingestion without an affirmative yes.** Scraping a curation product
 captures ~100% of its value with no click-back — off-brand for a symbiotic
-aggregator. Phase 0 sends a partnership email to Index Newspapers
+aggregator. Phase 0 sends a partnership email to EverOut (portland@everout.com)
 ([draft](everout-outreach-draft.md), owner approves before send). Yes →
 attributed ingestion as a coverage backstop. No/silence → proceed; with our AI
 curating raw feeds, their curation is desirable, not load-bearing.
@@ -112,7 +112,7 @@ blast radius — link out or filesystem-cache instead).
 
 | Phase | What | Exit criteria |
 |---|---|---|
-| **0** (days) | Send Index Newspapers email (after owner approval); regenerate migration from trimmed schema | Email sent; migration merged |
+| **0** (days) | Send EverOut email (after owner approval); regenerate migration from trimmed schema | Email sent; migration merged |
 | **1** (1–2 wks) | Shadow ingestion: Tier A + first Tier B venues; Haiku scoring; all gates live; **publishes nothing** | 2 clean weeks of canary metrics; ≥30 approved candidates/week |
 | **2** | Public 10-picks module: homepage widget + digest section, attribution + link-out | Gates green; go-live |
 | **2.5** (conditional) | Tier C APIs for category gaps (music/comedy volume) | Only if volume floor or category coverage demands it |
