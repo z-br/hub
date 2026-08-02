@@ -1,0 +1,84 @@
+BURNSIDE RENDERS — FINAL SELF-CONTAINED PROMPTS
+Every prompt below is COMPLETE — paste it alone into any image model, nothing else needed.
+Save each result with the exact filename shown, drop them all in public/renders/ in the repo.
+(Tip, optional: generating a subject's rain + summer versions in one chat makes the pair match better.)
+
+============================================================
+FILENAME: gate-rain.jpg
+============================================================
+A graceful mass-timber gateway arch spanning a two-lane park entrance road where a city street ends at a forested hillside, on a rainy Pacific Northwest evening at blue hour. The arch has glulam timber ribs, warm LED edge lighting tracing its curve, a lit blade sign at the crown reading exactly "WASHINGTON PARK", subtle rose motifs in its steel gusset plates, and rose beds at its base with low landscape lighting along the entry path. Dense Douglas fir forest rises behind the arch; a wet five-lane arterial street with early-1900s brick apartment buildings recedes behind the viewer. Warm amber and burnt-orange light glows against the cool dusk and spills onto wet reflective pavement; a few people with umbrellas walk through the arch. Photorealistic architectural concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: gate-summer.jpg
+============================================================
+A graceful mass-timber gateway arch spanning a two-lane park entrance road where a city street ends at a forested hillside, on a clear golden-hour summer evening. The arch has glulam timber ribs, a softly lit blade sign at the crown reading exactly "WASHINGTON PARK", subtle rose motifs in its steel gusset plates, and rose beds in full bloom at its base. Dense Douglas fir forest glows green behind the arch; a five-lane arterial street with early-1900s brick apartment buildings recedes behind the viewer with long warm shadows. Streams of people walk and cycle through the arch toward the forest. Photorealistic architectural concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: pavilion-rain.jpg
+============================================================
+A landmark mass-timber pavilion on a grassy riverfront park block in Portland Oregon at night in the rain, with a steel truss drawbridge and the river directly behind it. The pavilion has a soaring exposed glulam roof with operable louvers half-open, and walls of clear glass with sheets of rainwater cascading down them, backlit so the falling water glows amber. Under the roof: gas fire pits with people gathered around them, a small covered children's playground at one end where kids play dry while rain falls beyond, and beer-garden communal tables under string lights. City buildings stand across the street; market stalls are visible in the distance under the bridge. Blue hour, wet reflections, warm burnt-orange accents against cool dusk, people with umbrellas. Photorealistic architectural concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: pavilion-summer.jpg
+============================================================
+A landmark mass-timber pavilion on a grassy riverfront park block in Portland Oregon on a golden-hour summer evening, with a steel truss drawbridge and the river warm in the background. The pavilion has a soaring exposed glulam roof with its operable louvers fully open to the sky and its glass walls retracted. The beer garden overflows onto the lawn with picnic blankets and communal tables; kids are busy on the playground at one end in golden light; fire pits sit unlit; a market crowd drifts in from under the bridge; sailboats dot the river; a few green-and-gold soccer scarves appear in the crowd of kids, dogs, and strollers. Photorealistic architectural concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: beergarden-rain.jpg
+============================================================
+Inside a covered mass-timber beer garden on a rainy Portland evening: long communal tables full of people, a tap list chalked on a timber board with illegible lettering, rain streaming down backlit glass walls that glow warm amber, a gas fire pit at the center, and a children's play structure busy at the far end under the same sweeping glulam roof. Steam rises from food stalls; a wet park lawn and a steel truss bridge are visible through the glass. Blue hour, warm burnt-orange accents against cool dusk. Photorealistic architectural concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: beergarden-summer.jpg
+============================================================
+An open-air mass-timber beer garden on a summer evening, the roof's operable louvers fully open to a pink dusk sky: long communal tables full of people, condensation on cold glasses, string lights just coming on, a children's play structure busy at the far end under the same sweeping glulam roof, steam rising from food stalls, a park lawn, river, and steel truss bridge beyond. Golden hour, lively crowd. Photorealistic architectural concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-river-rain.jpg
+============================================================
+A rainy blue-hour city intersection near an old steel drawbridge in Portland Oregon, with historic brick buildings on the corners. A large ground mural fills the intersection — swirling river currents in blues and silver with salmon silhouettes — while the white crosswalk bars stay crisp and unpainted. Bridge-truss-themed art panels stand on both corners, two pedestrian-scale light poles carry themed banners, and pedestrians cross over the mural with umbrellas. Wet pavement reflects the warm burnt-orange accent lighting against cool dusk. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-books-rain.jpg
+============================================================
+A rainy blue-hour intersection beside a massive historic brick bookstore occupying a full city block in Portland Oregon, warm light spilling from its windows. A giant open-book ground mural fills the intersection, abstract text-lines flowing outward into the street grid with all lettering illegible, while the white crosswalk bars stay crisp and unpainted. Corner art panels are styled like giant book spines; light poles carry banners; pedestrians laden with book bags cross under umbrellas. Wet reflections, warm burnt-orange accents against cool dusk. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-books-summer.jpg
+============================================================
+A sunny summer-evening intersection beside a massive historic brick bookstore occupying a full city block in Portland Oregon. A giant open-book ground mural fills the intersection, abstract text-lines flowing outward into the street grid with all lettering illegible, while the white crosswalk bars stay crisp and unpainted. Corner art panels are styled like giant book spines; light poles carry banners bright in golden light; heavy foot traffic crosses over the mural, people carrying book bags, sidewalk tables by the corners. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-pride-rain.jpg
+============================================================
+A rainy blue-hour intersection beside a historic four-story brick hotel-and-ballroom building in Portland Oregon, its marquee light reflecting on wet streets. Radiating progress-pride color bands are painted around — never over — the crisp white crosswalk bars. Corner art panels honor drag and nightlife heritage in a glowing neon-sign visual style; light poles carry banners; pedestrians cross with umbrellas. Warm accents against cool dusk. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-gorge-rain.jpg
+============================================================
+A freeway underpass over a five-lane city street in Portland Oregon on a rainy evening, transformed by art: the concrete walls painted as towering basalt cliff murals with a waterfall pouring down one wall, silver uplighting making the painted water shimmer, painted ferns along the base, the ceiling painted deep forest green. Warm path lighting covers a widened sidewalk where pedestrians walk through with umbrellas; car headlights streak past. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-timbers-rain.jpg
+============================================================
+A rainy blue-hour intersection near a historic urban soccer stadium in Portland Oregon, floodlight glow in the mist. A ground mural of overlapping green-and-gold chevrons with a felled-log motif radiates from the center of the intersection, while the white crosswalk bars stay crisp and unpainted. Scarf-stripe art panels stand on the corners; light poles carry match-day banners; fans with green-and-gold scarves cross under umbrellas. Wet reflections, warm accents against cool dusk. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-timbers-summer.jpg
+============================================================
+A sunny summer match-day intersection near a historic urban soccer stadium in Portland Oregon. A ground mural of overlapping green-and-gold chevrons with a felled-log motif radiates from the center of the intersection, while the white crosswalk bars stay crisp and unpainted. Dense foot traffic crosses over the mural in green-and-gold scarves and jerseys; café tables spill onto the sidewalk beside scarf-stripe corner art panels; banners glow bright in the sunlight; the stadium roofline rises behind. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-stopmotion-rain.jpg
+============================================================
+A rainy blue-hour neighborhood intersection in Portland Oregon with a warm board-game café glowing on the corner. A whimsical hand-crafted stop-motion-animation-inspired ground mural covers the intersection — original characters only: curious cat and crow silhouettes, a miniature-set forest of oversized ferns and toadstools, stitched-fabric texture in the painted surface — while the white crosswalk bars stay crisp and unpainted. Corner art panels look like tiny theater sets; light poles carry banners; families cross with umbrellas. Wet reflections, warm accents against cool dusk. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: crossing-stopmotion-summer.jpg
+============================================================
+A sunny summer-evening neighborhood intersection in Portland Oregon with a board-game café busy on the corner, its tables spilling outside. A whimsical hand-crafted stop-motion-animation-inspired ground mural covers the intersection — original characters only: curious cat and crow silhouettes, a miniature-set forest of oversized ferns and toadstools, stitched-fabric texture in the painted surface — while the white crosswalk bars stay crisp and unpainted. Corner art panels look like tiny theater sets and glow in golden light; families and match-day crowds cross over the mural. Photorealistic concept illustration, 3:2 aspect ratio.
+
+============================================================
+FILENAME: trail-poster.jpg
+============================================================
+Stylized aerial illustration of a single city street running from a steel bridge over a river up to a forested hillside park entrance marked by a tiny lit archway. Seven glowing crossing points punctuate the street, each in a different color; warm dots of activity cluster at both ends. Flat modern map-poster style, muted paper background, burnt-orange and green accents, no text anywhere. 3:2 aspect ratio.

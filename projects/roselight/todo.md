@@ -6,6 +6,10 @@
 - [ ]
 
 ## Next
+- [ ] 🏙️ Civic weekend build 1: `civic-recovery` category + 13 vector tags (slugs = vector slugs, see [[civic-stack]] architecture), corridor prompt rule, `/api/topics/:slug.json` loader
+- [ ] 🏙️ Civic: pipe Better Burnside signups through subscribe flow with `source="betterburnside"`
+- [ ] 🏙️ Civic weekend build 2: Claude-drafted digest (30-min edit target) + EQRB keyword watcher section
+- [ ] 🏙️ Pull real subscriber/open-rate numbers → report to civic-stack baseline (momentum plan)
 - [ ] Review 7 leftover branches: design (`avant-garde-design`, `update-site-design`), docs (`docs-backfill`, `backfill-jsdoc`), infra (`coolify`, `cloudflare-r2-backup-cleanup`)
 - [ ] ⭐ Check `claude/fix-offline-refresh-error-0HUT0` (2026-05-16, no PR) — "skip focus revalidation when offline"; land or drop
 

@@ -19,3 +19,4 @@ Deployed on the self-hosted **Coolify** lab (Mac mini): web via Nixpacks, worker
 
 ## Related
 - Family of personal sites: [[homepage]], [[blog]]
+- **Civic stack**: [[civic-stack]] (Rose Light = sensing layer; see hub `projects/civic-stack/`) · [[burnside]]

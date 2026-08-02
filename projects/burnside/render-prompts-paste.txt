@@ -1,0 +1,58 @@
+BURNSIDE RENDER PROMPTS — PASTE-READY FOR GEMINI / NANO BANANA
+Each entry: attach the listed photo, paste the prompt as-is, one image per chat turn.
+Iterate with short follow-ups in the same chat ("more glow", "fewer people") — don't re-paste.
+
+════ RAIN SET ════
+
+── 1. GATE (RAIN) · attach: Washington Park entrance photo
+Keep this exact street scene, camera angle, buildings, and weather. Add a graceful mass-timber archway spanning the park entrance road: glulam timber ribs, warm LED edge lighting tracing the arch, a lit blade sign at the crown reading exactly "WASHINGTON PARK", subtle rose motifs in the steel gusset plates, low landscape lighting along the entry path, warm glow spilling onto wet pavement. Match the existing light direction; make added elements photoreal and scaled to the scene. Do not alter or remove existing buildings or signs. Pacific Northwest blue-hour evening, light rain, wet-pavement reflections, warm amber and burnt-orange accent lighting against cool dusk, a few people with umbrellas walking through, photorealistic architectural concept illustration.
+
+── 2. PAVILION SITING (RAIN) · attach: Ankeny–Ash lawn photo
+Keep this exact park scene, camera angle, and background. Add a low, elegant mass-timber pavilion occupying about half the lawn: a single sweeping glulam roof with operable louvers half-open, clear glass edge-walls with rainwater sheeting down them, backlit so the falling water glows warm amber, gas fire pits with people gathered beneath the roof, a small covered children's playground at one end with kids playing dry, beer-garden tables and string lights under cover, the Burnside Bridge unchanged in the background. Match the existing light; photoreal, scaled to the scene. Blue-hour evening, light rain, wet reflections, warm burnt-orange accents against cool dusk, photorealistic architectural concept illustration.
+
+── 3. PAVILION HERO (RAIN, no photo — from scratch)
+A landmark mass-timber pavilion in a riverfront park at night in the rain: soaring exposed glulam roof with operable louvers half-open, walls of clear glass with sheets of rainwater cascading down them, backlit so the falling water glows amber, gas fire pits with people gathered under cover, a small covered playground where children play dry while rain falls beyond, beer-garden string lights, a steel truss bridge silhouette and river in the background. Pacific Northwest blue-hour, wet reflections, warm amber and burnt-orange accents against cool dusk, people with umbrellas, photorealistic architectural concept illustration, 3:2.
+
+── 4. BEER GARDEN INTERIOR (RAIN, no photo — from scratch)
+Inside a covered mass-timber beer garden on a rainy evening: long communal tables full of people, a local tap list chalked on a timber board (illegible text), rain streaming down backlit glass walls that glow amber, a fire pit at the center, a kids' play structure visible at the far end under the same roof, steam rising from food stalls. Pacific Northwest blue-hour, warm burnt-orange accents against cool dusk, photorealistic architectural concept illustration, 3:2.
+
+── 5. CROSSING: RIVER & BRIDGE · attach: W 2nd & Ankeny photo
+Keep this exact intersection, camera angle, and buildings. Add a large ground mural filling the intersection — swirling river currents in blues and silver with salmon silhouettes — but keep the white crosswalk bars crisp and unpainted. Add matching bridge-truss-themed art panels on both corners and two pedestrian-scale light poles with themed banners; pedestrians crossing over the mural with umbrellas. Match existing light; photoreal. Blue-hour rain, wet reflections, warm burnt-orange accents, photorealistic concept illustration.
+
+── 6. CROSSING: BOOKS & STORIES · attach: NW 10th / Powell's photo
+Keep this exact intersection, camera angle, and buildings. Add a large ground mural filling the intersection — a giant open book with abstract text-lines flowing outward into the street grid (all lettering illegible) — keeping the white crosswalk bars crisp and unpainted. Corner art panels styled like giant book spines, two light poles with banners, pedestrians with umbrellas crossing. Match existing light; photoreal. Blue-hour rain, wet reflections, warm burnt-orange accents, photorealistic concept illustration.
+
+── 7. CROSSING: PRIDE / BURNSIDE TRIANGLE · attach: NW 12th–13th / Crystal photo
+Keep this exact intersection, camera angle, and buildings. Add radiating progress-pride color bands painted around (never over) the crisp white crosswalk bars, corner art panels honoring drag and nightlife heritage in a glowing neon-sign visual style, two light poles with banners, pedestrians with umbrellas crossing. Match existing light; photoreal. Blue-hour rain, wet reflections, warm accents, photorealistic concept illustration.
+
+── 8. UNDERPASS: GORGE & MULTNOMAH FALLS · attach: I-405 underpass photo
+Keep this exact underpass, camera angle, and structure. Paint the walls as basalt cliff murals with a waterfall pouring down one wall, silver uplighting making the painted water shimmer, ferns painted along the base, the ceiling deep forest green, warm path lighting for pedestrians walking through. Match the scene; photoreal. Rainy evening, wet reflections, photorealistic concept illustration.
+
+── 9. CROSSING: TIMBERS & THORNS · attach: NW 18th photo
+Keep this exact intersection, camera angle, and buildings. Add a ground mural of overlapping green-and-gold chevrons with a felled-log motif radiating from the center — white crosswalk bars kept crisp and unpainted — scarf-stripe corner art panels, two light poles with banners, pedestrians with umbrellas. Match existing light; photoreal. Blue-hour rain, wet reflections, photorealistic concept illustration.
+
+── 10. CROSSING: STOP-MOTION SPIRIT · attach: NW 20th / Mox photo
+Keep this exact intersection, camera angle, and buildings. Add a whimsical hand-crafted stop-motion-animation-inspired ground mural (original characters only): curious cat and crow silhouettes, a miniature-set forest of oversized ferns and toadstools painted across the corner, stitched-fabric texture in the mural — white crosswalk bars kept crisp. Corner art panels like miniature theater sets, two light poles with banners, pedestrians with umbrellas. Match existing light; photoreal. Blue-hour rain, wet reflections, photorealistic concept illustration.
+
+════ SUMMER SET ════
+
+── 11. GATE (SUMMER) · attach: SAME entrance photo as #1
+Keep this exact street scene and camera angle but make it a clear golden-hour summer evening. Add the same graceful mass-timber archway spanning the park entrance: glulam ribs, blade sign at the crown reading exactly "WASHINGTON PARK" lit softly against the dusk sky, roses in full bloom at its base, streams of people walking and cycling through the arch toward the forest, long warm shadows down the street behind. Photoreal, scaled to the scene; do not alter existing buildings. Photorealistic architectural concept illustration.
+
+── 12. PAVILION (SUMMER) · attach: SAME lawn photo as #2
+Keep this exact park scene and camera angle but make it a golden-hour summer evening. Add the same mass-timber pavilion, summer mode: roof louvers fully open to the sky, glass rain-walls retracted, beer garden overflowing onto the lawn with picnic blankets, kids busy on the playground in golden light, fire pits unlit, a market crowd drifting in from the north, sailboats on the river, the Burnside Bridge warm in the background. Photoreal, scaled to the scene. Lively and crowded — kids, dogs, strollers, a few Timbers scarves. Photorealistic architectural concept illustration.
+
+── 13. BEER GARDEN (SUMMER, no photo — from scratch)
+An open-air mass-timber beer garden on a summer evening, roof louvers fully open: communal tables full, kids' play structure busy, string lights just coming on against a pink sky, condensation on cold glasses, steam from food stalls, river and steel bridge in the background. Golden hour, lively crowd, photorealistic architectural concept illustration, 3:2.
+
+── 14. CROSSING: TIMBERS MATCH DAY · attach: SAME NW 18th photo as #9
+Same intersection and the same green-and-gold chevron mural as before, but a sunny summer match day: dense foot traffic crossing over the mural, Timbers scarves and jerseys everywhere, café tables spilling onto the sidewalk beside the corner art panels, banners bright in sunlight. Photoreal. Golden summer light, photorealistic concept illustration.
+
+── 15. CROSSING: MOX BLOCK SUMMER · attach: SAME NW 20th photo as #10
+Same intersection and the same stop-motion-spirit mural as before, but a sunny summer evening: families and match-day crowds crossing over the mural, people at tables outside the game café, corner panels bright in golden light. Photoreal. Photorealistic concept illustration.
+
+── 16. CROSSING: POWELL'S SUMMER · attach: SAME NW 10th photo as #6
+Same intersection and the same open-book mural as before, but a sunny summer evening: heavy foot traffic, people carrying book bags, sidewalk tables, banners bright in golden light. Photoreal. Photorealistic concept illustration.
+
+── 17. TRAIL POSTER (no photo — from scratch)
+Stylized aerial illustration of a single city street running from a steel bridge over a river up to a forested hillside park entrance marked by a tiny lit archway, seven glowing crossing points along the street each in a different color, warm dots of activity clustered at both ends, flat modern map-poster style, muted paper background, burnt-orange and green accents, no text.

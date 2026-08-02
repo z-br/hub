@@ -20,7 +20,9 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 | [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop", Y2K/synthwave (Next.js) | `~/dev/homepage` |
 | [Houseboard](projects/houseboard/readme.md) | Family task app — monorepo, Next.js web + SwiftUI iOS (was FamilyHub) | `~/dev/Houseboard` |
 | [famfam](projects/famfam/readme.md) | Family-history wiki engine — Claude-organized memories (Next.js) | `~/dev/famfam` |
-| [Tennis Workout Builder](projects/tennisworkout/readme.md) | Free tennis workout builder — wizard/remix/tracker (React Router, pre-deploy) | `~/dev/tennisworkout` |
+| [Civic Stack](projects/civic-stack/readme.md) | Umbrella: Rose Light + Better Burnside + research corpus — map, plan, conventions | hub-only (`projects/civic-stack/`) |
+| [Better Burnside](projects/burnside/readme.md) | W Burnside corridor campaign site + coalition (Astro) | `~/dev/burnside` |
+| [Tennis Workout Builder](projects/tennisworkout/readme.md) | Free tennis workout builder — wizard/remix/tracker (React Router) — [live](https://tennis.zebraproject.org) | `~/dev/tennisworkout` |
 
 ### 🟡 Paused
 | Project | What | Code |
