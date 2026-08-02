@@ -7,7 +7,7 @@ Related projects: [[roselight]] (Portland news) · [[wallacecourts]] (Wallace Pa
 
 ## Ideas
 
--
+- **Branding: highlight Portland volcanoes** — lean into the Boring Lava Field angle: Mt. Tabor, Powell Butte, Rocky Butte, Kelly Butte are all extinct volcanoes inside the city, plus skyline views of Hood and St. Helens. "City of volcanoes" is distinctive vs. the usual roses/bridges iconography.
 
 ## Places / to explore
 
