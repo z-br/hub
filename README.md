@@ -4,6 +4,7 @@ My markdown-centric command center for all ongoing projects. **Code lives in its
 
 - **Cross-project tasks:** [`todo.md`](todo.md) — the rollup
 - **Quick capture:** [`inbox.md`](inbox.md) — dump now, sort later
+- **Portland brainstorm:** [`portland.md`](portland.md) — ideas for all things Portland
 - **Deployment:** [`docs/deployment.md`](docs/deployment.md) — shared Coolify + Cloudflare Tunnel infra
 - **Archive:** [`docs/archive.md`](docs/archive.md) — retired & never-launched projects
 - **Worklog convention:** [`docs/conventions/worklog.md`](docs/conventions/worklog.md) — every repo keeps a timestamped `WORKLOG.md` of agent activity
