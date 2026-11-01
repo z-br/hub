@@ -18,6 +18,7 @@ Two processes share one Postgres DB: a **web app** (newspaper UI + editor dashbo
 Deployed on the self-hosted **Coolify** lab (Mac mini): web via Nixpacks, worker via `Dockerfile.worker`, behind a Cloudflare Tunnel. Migrated off DigitalOcean 2026-06-21 (prod DB copied into the shared Coolify Postgres; DO retired). Repo uses feature-branch + PR workflow.
 
 ## Plans
+- **Second city (idea):** [expansion-city.md](expansion-city.md) — Seattle recommended, Pittsburgh runner-up; analysis only (2026-11-01).
 - **Events:** [events-plan.md](events-plan.md) — automated "This Weekend: 10 Picks" module (adopted 2026-07-03; supersedes the [March full-calendar plan](reference/PLAN-event-calendar-2026-03.md)). Phase 0: [Everout outreach draft](everout-outreach-draft.md) awaiting Greg.
 
 ## Related
