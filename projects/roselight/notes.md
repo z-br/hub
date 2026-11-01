@@ -2,6 +2,16 @@
 
 > Dated journal: decisions, progress, dead-ends. Newest on top.
 
+## 2026-11-01
+- **Second-city analysis** (no decision yet): asked where a separate Rose Light
+  should launch. Pick: **Seattle** — nearly every seed feed has a Seattle twin,
+  same time zone, similar audience. Runner-up: **Pittsburgh** — 40+ fragmented
+  sources and reader habits broken by the 2026 Post-Gazette turmoil, but far,
+  Eastern time, no local knowledge. Key framing: target a city with many
+  hard-to-follow outlets, not a news desert. Code prereq: 177 Portland refs in
+  21 files, mostly the Claude prompts → per-city config first. →
+  [expansion-city](expansion-city.md)
+
 ## 2026-07-03
 - **Events direction adopted** via 4-agent debate + arbitrator: automated
   "This Weekend: 10 Picks" module (homepage + digest), consent-based feed
