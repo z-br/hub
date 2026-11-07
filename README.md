@@ -20,6 +20,8 @@ Status legend: 🟢 active · 🟡 paused · ⚪ idea · ✅ done · ⚫ retired
 | [Homepage](projects/homepage/readme.md) | Personal landing — "Greg's Workshop", Y2K/synthwave (Next.js) | `~/dev/homepage` |
 | [Houseboard](projects/houseboard/readme.md) | Family task app — monorepo, Next.js web + SwiftUI iOS (was FamilyHub) | `~/dev/Houseboard` |
 | [famfam](projects/famfam/readme.md) | Family-history wiki engine — Claude-organized memories (Next.js) | `~/dev/famfam` |
+| [Tennis Workout Builder](projects/tennisworkout/readme.md) | Free tennis workout builder — wizard/remix/tracker (React Router, pre-deploy) | `~/dev/tennisworkout` |
+| [USTA Plus](projects/usta-plus/readme.md) | Userscript: "My matches", next match + calendar export on USTA draw pages | `~/dev/usta-plus` |
 
 ### 🟡 Paused
 | Project | What | Code |
